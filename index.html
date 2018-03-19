@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fauxbook</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<script src="jpeg_camera/jpeg_camera_with_dependencies.min.js" type="text/javascript"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+	  <div id="fauxBar">
+	  	<div id="logoContainer">
+	    	<img src="img/Logo.svg" class="col-xs-1 logo" alt=""/> 
+	    	<img src="img/LogoType.svg" class="col-xs-2 logoType" alt=""/>
+			<div id="barMenu" class="col-md-4 pull-right"><a href="#">about</a>&nbsp; &#124; &nbsp;<a href="#">help</a><a id="pointsDiv">&nbsp; &#124; points: &nbsp;0</a></div>
+	    </div>
+       </div>
+	<div id="mainContainer"></div>
+	<div class="chatTab">Chat (0)</div>
+	<div class="chatMessages"></div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+	<script src="js/fauxbook.js"></script>
+	
+	<audio id="clickSound" class="sound">
+		<source src="audio/click.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="messageSound" class="sound">
+		<source src="audio/message.mp3" type="audio/mpeg">
+	</audio>
+  <img id="fakeNewsImage" src="img/How-to-Spot-Fake-News.png" width="3106" style="display: none" height="3878" alt=""/>
+</body>
+</html>
